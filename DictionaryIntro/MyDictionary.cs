@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DictionaryIntro
 {
-    class MyDictionary<T,U>
+    public class MyDictionary<T,U>
     {
         T[] keys;
         U[] values;
@@ -16,6 +16,7 @@ namespace DictionaryIntro
         {
             keys = new T[0];
             values = new U[0];
+            
         }
 
         public void Add(T key,U value)
@@ -36,12 +37,11 @@ namespace DictionaryIntro
                 values[i] = tempValues[i];
             }
              values[values.Length - 1] = value;
+           
 
-             Console.WriteLine("[" + key + "," + value + "]");
-            
-            
+            Console.WriteLine("[" + key + "," + value + "]");
         }
-        
 
+        
     }
 }

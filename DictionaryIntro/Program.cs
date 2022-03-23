@@ -46,6 +46,9 @@ namespace DictionaryIntro
             myDictionary.Add(24, "Ulaş");
             myDictionary.Add(16, "Ebrar");
 
+           
+
+
 
 
 
